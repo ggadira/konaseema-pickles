@@ -142,11 +142,11 @@ app.get('/api/products/:id', (req, res) => {
 
 // API: Contact form
 app.post('/api/contact', (req, res) => {
-  const { name, email, message } = req.body;
-  if (!name || !email || !message) {
+  const { name, mobile, message } = req.body;
+  if (!name || !mobile || !message) {
     return res.status(400).json({ error: 'All fields are required' });
   }
-  console.log('Contact form submission:', { name, email, message });
+  console.log('Contact form submission:', { name, mobile, message });
   res.json({ success: true, message: 'Thank you for reaching out! We will get back to you soon.' });
 });
 

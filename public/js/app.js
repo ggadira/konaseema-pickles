@@ -72,7 +72,7 @@ contactForm.addEventListener('submit', async (e) => {
 
   const data = {
     name: document.getElementById('name').value.trim(),
-    email: document.getElementById('email').value.trim(),
+    mobile: document.getElementById('mobile').value.trim(),
     message: document.getElementById('message').value.trim()
   };
 
