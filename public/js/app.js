@@ -56,46 +56,39 @@ function filterByCategory(category) {
   loadProducts(category);
 }
 
-// ==================== Order (WhatsApp redirect placeholder) ====================
+// ==================== Order via WhatsApp ====================
 function orderProduct(productName) {
-  // For now, scroll to contact. Later, integrate WhatsApp or payment gateway.
-  const msg = `Hi! I'd like to order: ${productName}`;
-  alert(`Thank you for your interest in "${productName}"!\n\nPlease contact us via the form below or call us to place your order.`);
-  document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  const whatsappNumber = '919399386666';
+  const text = `🥒 Hi! I'd like to order *${productName}* from Konaseema Healthy Pickles. Please share the details.`;
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+  window.open(whatsappUrl, '_blank');
 }
 
 // ==================== Contact Form ====================
-contactForm.addEventListener('submit', async (e) => {
+contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   formStatus.textContent = '';
   formStatus.className = 'form-status';
 
-  const data = {
-    name: document.getElementById('name').value.trim(),
-    mobile: document.getElementById('mobile').value.trim(),
-    message: document.getElementById('message').value.trim()
-  };
+  const name = document.getElementById('name').value.trim();
+  const mobile = document.getElementById('mobile').value.trim();
+  const message = document.getElementById('message').value.trim();
 
-  try {
-    const res = await fetch('/api/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    const result = await res.json();
-
-    if (res.ok) {
-      formStatus.textContent = result.message;
-      formStatus.className = 'form-status success';
-      contactForm.reset();
-    } else {
-      formStatus.textContent = result.error || 'Something went wrong.';
-      formStatus.className = 'form-status error';
-    }
-  } catch {
-    formStatus.textContent = 'Network error. Please try again later.';
+  if (!name || !mobile || !message) {
+    formStatus.textContent = 'All fields are required.';
     formStatus.className = 'form-status error';
+    return;
   }
+
+  const whatsappNumber = '919399386666';
+  const text = `🥒 *New Enquiry - Konaseema Healthy Pickles*\n\n👤 *Name:* ${name}\n📞 *Mobile:* ${mobile}\n💬 *Message:* ${message}`;
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
+
+  window.open(whatsappUrl, '_blank');
+
+  formStatus.textContent = 'Redirecting to WhatsApp...';
+  formStatus.className = 'form-status success';
+  contactForm.reset();
 });
 
 // ==================== Mobile Nav ====================
