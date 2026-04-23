@@ -1,0 +1,13 @@
+{
+  "name": "konaseema-healthy-pickles",
+  "version": "1.0.0",
+  "description": "Konaseema Healthy Pickles - Authentic Veg & Non-Veg Pickles",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
