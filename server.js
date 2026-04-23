@@ -18,7 +18,7 @@ const products = [
     price: 250,
     weight: '500g',
     description: 'Traditional Andhra-style raw mango pickle with mustard and chili powder. Bold, tangy, and spicy.',
-    image: '/images/mango-pickle.svg',
+    image: '/images/mango-pickle.jpg',
     bestseller: true
   },
   {
@@ -28,7 +28,7 @@ const products = [
     price: 220,
     weight: '500g',
     description: 'Authentic Konaseema gongura (sorrel leaves) pickle with a signature sour and spicy taste.',
-    image: '/images/gongura-pickle.svg',
+    image: '/images/gongura-pickle.jpg',
     bestseller: true
   },
   {
@@ -38,7 +38,7 @@ const products = [
     price: 200,
     weight: '500g',
     description: 'Ripe tomato pickle slow-cooked with aromatic spices. Sweet, tangy, and mildly spiced.',
-    image: '/images/tomato-pickle.svg',
+    image: '/images/tomato-pickle.jpg',
     bestseller: false
   },
   {
@@ -48,7 +48,7 @@ const products = [
     price: 180,
     weight: '500g',
     description: 'Sun-dried lemon pickle made with fresh lemons, turmeric, and a blend of traditional spices.',
-    image: '/images/lemon-pickle.svg',
+    image: '/images/lemon-pickle.jpg',
     bestseller: false
   },
   {
@@ -58,7 +58,7 @@ const products = [
     price: 230,
     weight: '500g',
     description: 'Crunchy amla pickle rich in Vitamin C. A healthy and delicious addition to every meal.',
-    image: '/images/amla-pickle.svg',
+    image: '/images/amla-pickle.jpg',
     bestseller: false
   },
   {
@@ -68,7 +68,7 @@ const products = [
     price: 210,
     weight: '500g',
     description: 'Fiery red chili pickle stuffed with tangy spice mix. For those who love it extra hot!',
-    image: '/images/chili-pickle.svg',
+    image: '/images/chili-pickle.jpg',
     bestseller: false
   },
   // Non-Veg Pickles
@@ -79,7 +79,7 @@ const products = [
     price: 350,
     weight: '500g',
     description: 'Boneless chicken pickle cooked in traditional Konaseema style with aromatic spices and sesame oil.',
-    image: '/images/chicken-pickle.svg',
+    image: '/images/chicken-pickle.jpg',
     bestseller: true
   },
   {
@@ -89,7 +89,7 @@ const products = [
     price: 400,
     weight: '500g',
     description: 'Fresh river prawns pickle from Konaseema. Perfectly spiced with a rich, bold flavor.',
-    image: '/images/prawns-pickle.svg',
+    image: '/images/prawns-pickle.jpg',
     bestseller: true
   },
   {
@@ -99,7 +99,7 @@ const products = [
     price: 380,
     weight: '500g',
     description: 'Crispy fish pickle made with fresh catch from Godavari. Crunchy, spicy, and irresistible.',
-    image: '/images/fish-pickle.svg',
+    image: '/images/fish-pickle.jpg',
     bestseller: false
   },
   {
@@ -109,7 +109,7 @@ const products = [
     price: 450,
     weight: '500g',
     description: 'Tender mutton pieces slow-cooked in a rich blend of spices and cold-pressed sesame oil.',
-    image: '/images/mutton-pickle.svg',
+    image: '/images/mutton-pickle.jpg',
     bestseller: false
   },
   {
@@ -119,7 +119,7 @@ const products = [
     price: 300,
     weight: '500g',
     description: 'Boiled egg pickle marinated in tangy, spicy masala. A protein-rich Andhra delicacy.',
-    image: '/images/egg-pickle.svg',
+    image: '/images/egg-pickle.jpg',
     bestseller: false
   }
 ];
