@@ -8,9 +8,9 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
-// Product data
+// Product data (bestsellers first)
 const products = [
-  // Veg Pickles
+  // Bestsellers
   {
     id: 1,
     name: 'Avakaya (Mango Pickle)',
@@ -22,6 +22,17 @@ const products = [
     bestseller: true
   },
   {
+    id: 7,
+    name: 'Chicken Pickle',
+    category: 'nonveg',
+    price: 350,
+    weight: '500g',
+    description: 'Boneless chicken pickle cooked in traditional Konaseema style with aromatic spices and sesame oil.',
+    image: '/images/chicken-pickle.jpg',
+    bestseller: true
+  },
+  // Veg Pickles
+  {
     id: 2,
     name: 'Gongura Pickle',
     category: 'veg',
@@ -29,7 +40,7 @@ const products = [
     weight: '500g',
     description: 'Authentic Konaseema gongura (sorrel leaves) pickle with a signature sour and spicy taste.',
     image: '/images/gongura-pickle.jpg',
-    bestseller: true
+    bestseller: false
   },
   {
     id: 3,
@@ -63,16 +74,6 @@ const products = [
   },
   // Non-Veg Pickles
   {
-    id: 7,
-    name: 'Chicken Pickle',
-    category: 'nonveg',
-    price: 350,
-    weight: '500g',
-    description: 'Boneless chicken pickle cooked in traditional Konaseema style with aromatic spices and sesame oil.',
-    image: '/images/chicken-pickle.jpg',
-    bestseller: true
-  },
-  {
     id: 8,
     name: 'Prawns Pickle',
     category: 'nonveg',
@@ -80,7 +81,7 @@ const products = [
     weight: '500g',
     description: 'Fresh river prawns pickle from Konaseema. Perfectly spiced with a rich, bold flavor.',
     image: '/images/prawns-pickle.jpg',
-    bestseller: true
+    bestseller: false
   },
   {
     id: 9,
