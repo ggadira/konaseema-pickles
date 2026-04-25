@@ -198,7 +198,7 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`\n🥒 Konaseema Healthy Pickles is running!`);
+  console.log(`\n🥒 Rajulainti Ruchulu is running!`);
   console.log(`   Local: http://localhost:${PORT}`);
   console.log(`   Press Ctrl+C to stop\n`);
 });

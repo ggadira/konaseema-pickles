@@ -59,7 +59,7 @@ function filterByCategory(category) {
 // ==================== Order via WhatsApp ====================
 function orderProduct(productName) {
   const whatsappNumber = '919399386666';
-  const text = `🥒 Hi! I'd like to order *${productName}* from Konaseema Healthy Pickles. Please share the details.`;
+  const text = `🥒 Hi! I'd like to order *${productName}* from Rajulainti Ruchulu. Please share the details.`;
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
   window.open(whatsappUrl, '_blank');
 }
@@ -81,7 +81,7 @@ contactForm.addEventListener('submit', (e) => {
   }
 
   const whatsappNumber = '919399386666';
-  const text = `🥒 *New Enquiry - Konaseema Healthy Pickles*\n\n👤 *Name:* ${name}\n📞 *Mobile:* ${mobile}\n💬 *Message:* ${message}`;
+  const text = `🥒 *New Enquiry - Rajulainti Ruchulu*\n\n👤 *Name:* ${name}\n📞 *Mobile:* ${mobile}\n💬 *Message:* ${message}`;
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
 
   window.open(whatsappUrl, '_blank');
