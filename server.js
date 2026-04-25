@@ -117,7 +117,7 @@ const products = [
     id: 9,
     name: 'Fish Pickle',
     category: 'nonveg',
-    price: 700,
+    price: 600,
     weight: '500g',
     description: 'Crispy fish pickle made with fresh catch from Godavari. Crunchy, spicy, and irresistible.',
     image: '/images/fish-pickle.jpg',
