@@ -110,7 +110,7 @@ const products = [
     category: 'snacks',
     price: 200,
     weight: '250g',
-    description: 'Crispy and savory Sunnunda made with rice flour and spices. A traditional Andhra snack perfect with tea.',
+    description: 'Crispy and savory Sunnunda made with uraddal flour and jaggery. A traditional perfect Andhra snack.',
     image: '/images/sunnunda.jpg',
     bestseller: false
   },
