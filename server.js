@@ -17,7 +17,7 @@ const products = [
     category: 'snacks',
     price: 175,
     weight: '5 pieces',
-    description: 'Pootharekulu is a famous traditional sweet from Andhra Pradesh, made with ultra-thin rice starch sheets filled with sugar or jaggery and ghee. It has a delicate, paper-like texture and melts in the mouth, often enriched with dry fruits for added flavor.',
+    description: 'Pootharekulu is a delicate Andhra sweet made from thin rice sheets filled with sugar or jaggery and ghee, known for its melt-in-the-mouth texture.',
     image: '/images/pootharekulu.jpg',
     bestseller: true
   },
