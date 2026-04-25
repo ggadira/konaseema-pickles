@@ -704,6 +704,18 @@ img {
   border-radius: 8px;
 }
 
+/* ==================== Map ==================== */
+.map-container {
+  margin-top: 48px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.map-container iframe {
+  display: block;
+}
+
 /* ==================== Footer ==================== */
 .footer {
   background: var(--bg-dark);
