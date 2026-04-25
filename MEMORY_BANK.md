@@ -58,7 +58,9 @@ web-application-pickles/
 │       ├── prawns-pickle.jpg
 │       ├── fish-pickle.jpg
 │       ├── mutton-pickle.jpg
-│       └── egg-pickle.jpg
+│       ├── sunnunda.jpg
+│       ├── boondi-mixer.jpg
+│       └── karapusa.jpg
 ```
 
 ---
@@ -68,7 +70,7 @@ web-application-pickles/
 ### `server.js`
 - Express server listening on `process.env.PORT || 3000`
 - Serves static files from `public/`
-- **`GET /api/products`** — Returns all 11 products (supports `?category=veg` or `?category=nonveg` filter)
+- **`GET /api/products`** — Returns all 13 products (supports `?category=veg`, `?category=nonveg`, or `?category=snacks` filter)
 - **`GET /api/products/:id`** — Returns single product by ID
 - **`POST /api/contact`** — Accepts `{ name, mobile, message }`, logs to console
 - Product data is hardcoded in this file (no database)
@@ -87,7 +89,7 @@ web-application-pickles/
 
 ### `public/js/app.js`
 - Fetches products from `/api/products` and renders cards dynamically
-- Filter tabs: All / Veg / Non-Veg
+- Filter tabs: All / Veg / Non-Veg / Snacks
 - **Order Now button** → Opens WhatsApp with product name pre-filled
 - **Contact form submit** → Opens WhatsApp with formatted message (Name, Mobile, Message)
 - WhatsApp number hardcoded: `919399386666`
@@ -114,7 +116,13 @@ web-application-pickles/
 | 8 | Prawns Pickle | ₹400/500g | ⭐ Yes |
 | 9 | Fish Pickle | ₹380/500g | No |
 | 10 | Mutton Pickle | ₹450/500g | No |
-| 11 | Egg Pickle | ₹300/500g | No |
+
+### Snacks (3)
+| ID | Name | Price | Bestseller |
+|----|------|-------|------------|
+| 11 | Sunnunda | ₹200/250g | No |
+| 12 | Boondi Mixer | ₹180/250g | No |
+| 13 | Karapusa | ₹190/250g | No |
 
 ---
 
@@ -131,6 +139,7 @@ web-application-pickles/
 | 7 | Apr 23, 2026 | Updated CSS for real photos (object-fit: cover, full width) |
 | 8 | Apr 23, 2026 | Changed contact form: Email field → Mobile Number field (all 3 files) |
 | 9 | Apr 23, 2026 | Integrated WhatsApp Click-to-Chat for contact form and Order Now buttons |
+| 10 | Apr 25, 2026 | Removed Egg Pickle, added 3 Snacks (Sunnunda, Boondi Mixer, Karapusa) with Snacks filter tab |
 
 ---
 

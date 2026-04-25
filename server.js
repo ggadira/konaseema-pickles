@@ -112,14 +112,35 @@ const products = [
     image: '/images/mutton-pickle.jpg',
     bestseller: false
   },
+  // Snacks
   {
     id: 11,
-    name: 'Egg Pickle',
-    category: 'nonveg',
-    price: 300,
-    weight: '500g',
-    description: 'Boiled egg pickle marinated in tangy, spicy masala. A protein-rich Andhra delicacy.',
-    image: '/images/egg-pickle.jpg',
+    name: 'Sunnunda',
+    category: 'snacks',
+    price: 200,
+    weight: '250g',
+    description: 'Crispy and savory Sunnunda made with rice flour and spices. A traditional Andhra snack perfect with tea.',
+    image: '/images/sunnunda.jpg',
+    bestseller: false
+  },
+  {
+    id: 12,
+    name: 'Boondi Mixer',
+    category: 'snacks',
+    price: 180,
+    weight: '250g',
+    description: 'Crunchy boondi mixed with roasted peanuts, curry leaves, and a blend of tangy spices.',
+    image: '/images/boondi-mixer.jpg',
+    bestseller: false
+  },
+  {
+    id: 13,
+    name: 'Karapusa',
+    category: 'snacks',
+    price: 190,
+    weight: '250g',
+    description: 'Traditional crispy Karapusa (ribbon pakoda) made with rice and urad dal flour. Crunchy and addictive!',
+    image: '/images/karapusa.jpg',
     bestseller: false
   }
 ];
