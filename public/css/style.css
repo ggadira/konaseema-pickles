@@ -159,7 +159,7 @@ img {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url('/images/hero-bg.jpg') center center / cover no-repeat;
+  background: url('/images/hero-bg.png') center center / cover no-repeat;
   overflow: hidden;
 }
 
