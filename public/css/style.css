@@ -93,18 +93,17 @@ img {
 
 .logo-name {
   font-family: var(--font-heading);
-  font-size: 1.4rem;
-  font-weight: 900;
+  font-size: 1.3rem;
+  font-weight: 800;
   color: var(--primary);
-  letter-spacing: 0.5px;
 }
 
 .logo-tagline {
-  font-family: var(--font-accent);
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.7rem;
+  font-weight: 500;
   color: var(--secondary);
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .nav {
@@ -186,19 +185,17 @@ img {
 
 .hero-title {
   font-family: var(--font-heading);
-  font-size: 3.8rem;
-  font-weight: 900;
-  line-height: 1.15;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
   margin-bottom: 20px;
   color: var(--white);
-  text-shadow: 0 3px 12px rgba(0,0,0,0.4);
-  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
 .highlight {
-  color: #ffbc42;
+  color: #ff6b6b;
   position: relative;
-  font-style: italic;
 }
 
 .hero-subtitle {
@@ -294,22 +291,8 @@ img {
   position: relative;
 }
 
-.section-title::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-
 .section-title.text-left {
   text-align: left;
-}
-
-.section-title.text-left::after {
-  margin-left: 0;
 }
 
 .section-subtitle {
