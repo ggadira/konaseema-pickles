@@ -72,6 +72,36 @@ const products = [
     image: '/images/chili-pickle.jpg',
     bestseller: false
   },
+  {
+    id: 14,
+    name: 'Maagai Pachadi',
+    category: 'veg',
+    price: 275,
+    weight: '500g',
+    description: 'A traditional Andhra-style sun-dried mango pickle made by curing raw mango slices with salt and turmeric, sun-drying them for 2-3 days, and mixing with red chili powder, mustard powder, fenugreek powder, and groundnut oil.',
+    image: '/images/maagai-pachadi.jpg',
+    bestseller: false
+  },
+  {
+    id: 15,
+    name: 'Allam Pachadi',
+    category: 'veg',
+    price: 300,
+    weight: '500g',
+    description: 'Allam Pachadi is a popular Andhra style ginger pickle made with fresh ginger root, ground spices, tamarind & jaggery.',
+    image: '/images/allam-pachadi.jpg',
+    bestseller: false
+  },
+  {
+    id: 16,
+    name: 'Amla Pickle',
+    category: 'veg',
+    price: 300,
+    weight: '500g',
+    description: 'A quick and easy Amla pickle also called Usiri Avakaya, usually made during the winters when Amla are in season. Tangy, spicy, and packed with Vitamin C.',
+    image: '/images/amla-pickle.jpg',
+    bestseller: false
+  },
   // Non-Veg Pickles
   {
     id: 8,
