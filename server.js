@@ -52,16 +52,6 @@ const products = [
     bestseller: false
   },
   {
-    id: 5,
-    name: 'Amla (Gooseberry) Pickle',
-    category: 'veg',
-    price: 230,
-    weight: '500g',
-    description: 'Crunchy amla pickle rich in Vitamin C. A healthy and delicious addition to every meal.',
-    image: '/images/amla-pickle.jpg',
-    bestseller: false
-  },
-  {
     id: 6,
     name: 'Red Chili Pickle',
     category: 'veg',
