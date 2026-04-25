@@ -88,7 +88,7 @@ const products = [
     category: 'veg',
     price: 275,
     weight: '500g',
-    description: 'A traditional Andhra-style sun-dried mango pickle made by curing raw mango slices with salt and turmeric, sun-drying them for 2-3 days, and mixing with red chili powder, mustard powder, fenugreek powder, and groundnut oil.',
+    description: 'Maagai Pachadi is a traditional Andhra pickle made from sun-dried raw mango slices mixed with spices and oil for a bold, tangy flavor.',
     image: '/images/maagai-pachadi.jpg',
     bestseller: false
   },
