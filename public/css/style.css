@@ -77,12 +77,11 @@ img {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .logo-img {
-  width: 48px;
-  height: 48px;
+  height: 55px;
+  width: auto;
   object-fit: contain;
 }
 
