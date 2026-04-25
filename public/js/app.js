@@ -23,7 +23,7 @@ function renderProducts(products) {
   productsGrid.innerHTML = products.map(product => `
     <div class="product-card animate-in">
       ${product.bestseller ? '<span class="product-badge">⭐ Bestseller</span>' : ''}
-      <span class="category-badge ${product.category}">${product.category === 'veg' ? '🟢 Veg' : '🔴 Non-Veg'}</span>
+      <span class="category-badge ${product.category}">${product.category === 'nonveg' ? '🔴 Non-Veg' : '🟢 Veg'}${product.category === 'snacks' ? ' Snack' : ''}</span>
       <div class="product-image">
         <img src="${product.image}" alt="${product.name}" loading="lazy">
       </div>
