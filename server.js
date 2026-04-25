@@ -12,6 +12,16 @@ app.use(express.json());
 const products = [
   // Bestsellers
   {
+    id: 17,
+    name: 'Pootharekulu',
+    category: 'snacks',
+    price: 175,
+    weight: '5 pieces',
+    description: 'Pootharekulu is a famous traditional sweet from Andhra Pradesh, made with ultra-thin rice starch sheets filled with sugar or jaggery and ghee. It has a delicate, paper-like texture and melts in the mouth, often enriched with dry fruits for added flavor.',
+    image: '/images/pootharekulu.jpg',
+    bestseller: true
+  },
+  {
     id: 1,
     name: 'Avakaya (Mango Pickle)',
     category: 'veg',
