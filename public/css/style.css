@@ -440,6 +440,10 @@ img {
   color: var(--primary);
 }
 
+.product-price .rupee {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
 .product-weight {
   font-size: 0.8rem;
   color: var(--text-light);

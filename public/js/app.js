@@ -31,7 +31,7 @@ function renderProducts(products) {
         <h3 class="product-name">${product.name}</h3>
         <p class="product-desc">${product.description}</p>
         <div class="product-footer">
-          <div class="product-price">₹${product.price} <span class="product-weight">/ ${product.weight}</span></div>
+          <div class="product-price"><span class="rupee">&#8377;</span>${product.price} <span class="product-weight">/ ${product.weight}</span></div>
           <button class="btn-order" onclick="orderProduct('${product.name}')">Order Now</button>
         </div>
       </div>
