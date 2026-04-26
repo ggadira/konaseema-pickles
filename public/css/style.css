@@ -530,17 +530,22 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 12px;
-}
-
-.about-image-placeholder span {
-  font-size: 4rem;
+  overflow: hidden;
+  position: relative;
 }
 
 .about-image-placeholder p {
-  font-weight: 500;
-  color: var(--text-light);
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.4);
+  padding: 8px 24px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
 }
 
 .about-content p {
