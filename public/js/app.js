@@ -143,14 +143,3 @@ function checkReveal() {
 
 window.addEventListener('scroll', checkReveal, { passive: true });
 window.addEventListener('load', checkReveal);
-
-// ==================== Parallax Floating Elements ====================
-const floaters = document.querySelectorAll('.floater');
-
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY;
-  floaters.forEach((f, i) => {
-    const speed = 0.02 + (i * 0.01);
-    f.style.transform = `translateY(${scrollY * speed * (i % 2 === 0 ? -1 : 1)}px) rotate(${scrollY * 0.02}deg)`;
-  });
-}, { passive: true });
