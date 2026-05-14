@@ -611,26 +611,11 @@ img {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: var(--transition);
-  position: relative;
-  border-left: 4px solid transparent;
-}
-
-.testimonial-card::before {
-  content: '\u201C';
-  position: absolute;
-  top: 16px;
-  right: 24px;
-  font-size: 4rem;
-  font-family: var(--font-heading);
-  color: var(--primary);
-  opacity: 0.08;
-  line-height: 1;
 }
 
 .testimonial-card:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
-  border-left-color: var(--primary);
 }
 
 .stars {
